@@ -14,17 +14,19 @@ export default function Footer() {
                 <h4 className={style.heading}>Work</h4>
               </li>
               <li>
-                <a href="#">Case Studies</a>
+                <a href="/caseStudies">Case Studies</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="/empowerment">Empowerment</a>
+              </li>
+             
+              <li>
+                <a href="/blog">Blogs</a>
               </li>
               <li>
-                <a href="#">Blogs</a>
+                <a href="/blogDetails">Blog Details</a>
               </li>
-              <li>
-                <a href="#">Our Story</a>
-              </li>
+             
             </ul>
 
             <ul>
@@ -52,13 +54,13 @@ export default function Footer() {
                 <h4 className={style.heading}>Services</h4>
               </li>
               <li>
-                <a href="#">Development & Design</a>
+                <a href="/growthService">Growth Services</a>
               </li>
               <li>
-                <a href="#">Marketing</a>
+                <a href="SeoServices">Seo Services</a>
               </li>
               <li>
-                <a href="#">Hosting & Cloud</a>
+                <a href="/creationServices">creation Services</a>
               </li>
             </ul>
 
