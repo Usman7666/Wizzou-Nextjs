@@ -1,0 +1,174 @@
+$color-primary : #262626;
+$color-button  :#218AF0;
+$font-inter : '--font-inter';
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large: 1200px;
+
+
+// Add these new styles
+.dark {
+    background: #020E1A !important;
+    color: white !important;
+ 
+    .navOpen{
+      background: #020E1A !important;
+    }
+    .menu {
+      background: #020E1A !important;
+      li, a, select {
+        color: white !important;
+        background: transparent !important;
+      }
+      svg{
+        path{
+          fill: white;
+        }
+      }
+    }
+  
+    .mainright {
+   
+      select {
+     
+        color: white !important;
+        background: transparent;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .darkmodebtn {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .navOpen{
+        background:  #E9F3FD !important;  
+      }
+
+.main{
+    background: white;
+    position: relative;
+    max-width: 1240px;
+    width: 100%;
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    @media (max-width:$breakpoint-large) {
+        padding: 25px;        
+    }
+    .logo{
+      z-index: 10;
+      position: relative;
+        @media (max-width:$breakpoint-mobile) {
+            max-width: 150px;   
+        }
+    }
+  
+   .hamburger{
+    z-index: 10;
+    position: relative;
+        display: none;
+        cursor: pointer;
+        @media (max-width : $breakpoint-desktop) {
+            display: block;
+        }
+    }
+    .menu{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        @media (max-width:$breakpoint-desktop) {
+            display: none;
+            position: absolute; 
+            z-index: 99;
+            padding: 30px;  
+            flex-direction: column;  
+            top: 90px;
+            width: 100%;
+            left: 0;
+            align-items: flex-start;
+            background: var(--Container-Fill-container-fill-primary-soft, #E9F3FD);
+            height: 500px;
+        }
+    
+     li{
+      z-index: 10;
+      position: relative;
+        list-style: none;
+        color: $color-primary;
+        font-family:var(#{$font-inter});
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 167%;
+       
+      }
+      .listlanguage{
+        border: none; 
+        color: $color-primary;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        display: none;
+        position: absolute; 
+        top: 380px;
+        left: 30;
+        background: var(--Container-Fill-container-fill-primary-soft, #E9F3FD);
+        @media (max-width : $breakpoint-desktop) {
+            display: flex;
+        }
+      }
+    }
+    .open {
+        display: flex !important;
+        
+      }
+    .close{
+        display: none !important;
+    }
+}
+.linktribes{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainright{
+    display: flex;
+    gap: 25px;
+    .darkmodebtn{
+      z-index: 10;
+      position: relative;
+        width: 45px;
+        height: 45px;
+        @media (max-width : $breakpoint-desktop) {
+            display: none;
+        }
+    }
+    select{
+      z-index: 10;
+      position: relative;
+      background-color: transparent;
+        border: none; 
+        color: $color-primary;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+    }
+    button{
+      border: none;
+      background-color: transparent;
+    }
+
+}

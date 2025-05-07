@@ -1,0 +1,211 @@
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large: 1200px;
+
+
+$color-primary : #000;
+$color-input : #F5F5F5;
+$color-paragraph : #404040;
+$color-paragraph2 : #D4D4D4;
+$color-border : #F2F2F2;
+$color-blue2 : #218AF0;
+$color-blue1 : #020E1A;
+$color-blue3 : #041C33;
+$color-red1 : #FF3310;
+$color-blue4 : #E9F3FD;
+$font-rethink_sans : "--font-rethink_sans";
+$font-inter : '--font-inter';
+
+
+.container{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+
+     padding:  25px;
+
+    @media (max-width: $breakpoint-desktop) {
+      padding: 25px;  
+  }
+  @media (max-width: $breakpoint-mobile) {
+      padding: 10px;  
+  }
+
+
+
+    &.dark{
+        .faq{
+            border-radius: 37.5px;
+            background: var(--Container-Fill-container-fill-soft, #272937);
+            h1{
+                color: white;
+            }
+            p{
+                color: $color-paragraph2;
+            }
+        }
+    }
+}
+
+.faq{
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 57px 175px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 37.5px;
+    background: var(--Container-Fill-container-fill-soft, $color-input);
+
+    @media (max-width: $breakpoint-desktop) {
+        padding: 25px;  
+    }
+    @media (max-width: $breakpoint-mobile) {
+        padding: 10px;  
+    }
+    h1{
+        max-width: 614px;
+        width: 100%;
+        color: var(--Typography-heading, #000);
+        text-align: center;
+        font-family: var(#{$font-rethink_sans});
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 40px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 28px;
+        }
+    }
+    p{
+        max-width: 614px;
+        width: 100%;
+        color: var(--Typography-paragraph, $color-paragraph);
+        text-align: center;
+        /* Paragraph - Main/Regular */
+        font-family: var(#{$font-inter});
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 167%; /* 30.06px */
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 16px;
+        }
+    }
+
+    .faqOpen{
+        cursor: pointer;
+        margin-top: 30px ;
+        display: flex;
+        max-width: 843.365px;
+        min-height: 185.992px;
+        padding: 28px 52px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 30px;
+        background: var(--Container-Fill-container-fill-light-fixed, #FFF);
+        @media (max-width: $breakpoint-mobile) {
+            padding: 25px;
+        }
+      .faqcontent{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        h1{
+            text-align: left;
+            color: var(--Typography-heading, #000);
+            font-family:var(#{$font-rethink_sans});
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            @media (max-width: $breakpoint-mobile) {
+                font-size: 20px;
+            }
+        }
+        p{
+            max-width: 739px;
+            color: var(--Text-Main, #595959);
+            text-align: left;
+            /* Paragraph - Main/Regular */
+            font-family: var(#{$font-inter});
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 167%; /* 30.06px */
+            @media (max-width: $breakpoint-mobile) {
+                font-size: 16px;
+            }
+        }
+      }
+    }
+    .faqClose{
+        cursor: pointer;
+        display: flex;
+        padding: 30px 50px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-bottom: 1px solid rgba(51, 51, 51, 0.10);
+        @media (max-width: $breakpoint-mobile) {
+            padding: 25px;
+        }
+        h1{
+            text-align: left;
+            color: var(--Typography-heading, #000);
+            font-family:var(#{$font-rethink_sans});
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            @media (max-width: $breakpoint-mobile) {
+                font-size: 20px;
+            }
+        }
+    }
+
+
+    
+    .ContactHeading{
+        color: var(--Typography-heading, #000);
+        text-align: center;
+        font-family: var(#{$font-rethink_sans});
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 30px;
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 35px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 24px;
+            padding: 10px;
+            
+        }
+    }
+
+    button{
+        border: none;
+        cursor: pointer;
+        color: var(--Container-Text-container-text-light-fixed, #FFF);
+        font-family:  var(#{$font-rethink_sans});
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: inline-flex;
+        padding: 15px 22px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 50px;
+        background: var(--Container-Fill-container-fill-secondary, $color-red1);
+    }
+}

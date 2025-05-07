@@ -1,0 +1,77 @@
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large: 1200px;
+
+.dark {
+  background: #020E1A !important;
+
+}
+
+.marqueeWrapper {
+  max-width: 1240px;
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+
+  @media (max-width:$breakpoint-tablet) {
+    padding: 50px 0;    
+   }
+}
+
+.marqueeText {
+  display: flex;
+  animation: marquee 10s linear infinite; /* Looping the animation */
+  gap: 50px;
+  width: 200%; /* Ensure the width is greater than the container for smooth scrolling */
+}
+
+.marqueeText img {
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+/* Adding a blur effect to the left and right sides */
+.marqueeWrapper::before,
+.marqueeWrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  z-index: 2;
+}
+
+.marqueeWrapper::before {
+  right: 0;
+}
+
+.marqueeWrapper::after {
+  transform: rotate(180deg);
+  left: 0;
+}
+.dark {
+  .marqueeWrapper::before {
+    right: 0;
+    background: linear-gradient(to left, rgba(2, 14, 26, 1), rgba(2, 14, 26, 0));
+  }
+  
+  .marqueeWrapper::after {
+    left: 0;
+    background: linear-gradient(to right, rgba(2, 14, 26, 1), rgba(2, 14, 26, 0));
+    transform: rotate(360deg);
+  }
+}
+/* Animation for scrolling images */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);  /* Start at the initial position */
+  }
+  100% {
+    transform: translateX(-50%);  /* Move to -50% to loop seamlessly */
+  }
+}

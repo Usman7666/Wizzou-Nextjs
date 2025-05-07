@@ -1,0 +1,163 @@
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large: 1200px;
+
+$color-primary : #000;
+$color-input : #F5F5F5;
+$color-paragraph : #404040;
+$color-paragraph2 : #D4D4D4;
+$color-border : #F2F2F2;
+$color-blue2 : #218AF0;
+$color-blue1 : #020E1A;
+$color-blue3 : #041C33;
+$color-red1 : #FF3310;
+$color-blue4 : #E9F3FD;
+$color-blue : #248AF0;
+$font-rethink_sans : "--font-rethink_sans";
+$font-inter : '--font-inter';
+
+
+
+.container{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+
+    &.dark{
+        .worksection{
+            h1{
+                color: white;
+            }
+        .workgrid{
+            border-radius: 32px;
+            background: var(--Container-Fill-container-fill-gradient-primary-light, 
+             linear-gradient(180deg, 
+           rgba(123, 185, 246, 0.1) 0%,  /* #7BB9F6 with 10% opacity */
+           rgba(29, 30, 41, 0.1) 100%    /* #1D1E29 with 10% opacity */
+            )
+        );
+
+        h2{
+            color: white;
+        }
+        p{
+            color: $color-paragraph2;
+        }
+        }
+        }
+    }
+}
+
+
+.worksection{
+    padding: 50px 0;
+    max-width: 1240px;
+    margin: auto;
+
+    @media (max-width:$breakpoint-large) {
+        padding: 25px;
+    }
+    @media (max-width:$breakpoint-mobile) {
+        padding: 10px;
+    }
+    
+    h1{
+        padding: 0px 0px 30px 0;
+        color: var(--Typography-heading, #000);
+        font-family: var(#{$font-rethink_sans});
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 387px;
+        width: 100%;
+        margin: auto;
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 40px;
+        }
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 28px;
+            text-align: center;
+        }
+    }
+
+    .workgrid{
+        border-radius: 32px;
+        background: linear-gradient(180deg, rgba(33, 129, 240, 0.1) 0%, rgba(226, 239, 253, 0.1) 100%);  
+        display: grid;
+        padding: 50px 30px;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(361px, 1fr));
+        @media (max-width:$breakpoint-mobile) {
+            padding: 20px 10px;
+        }
+        @media (max-width:$breakpoint-mobile) {
+            grid-template-columns: 1fr;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+
+        .logobg{
+            width: 39.311px;
+            height: 39.311px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            fill: var(--Dark-Main, #061E36);
+            background: #061E36;
+            border-radius: 100%;
+            color: #FFF;
+            font-family: var(#{$font-rethink_sans});
+            font-size: 22.504px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 126.632%; /* 28.498px */
+        }
+        h2{
+            color: var(--Typography-sub-heading, $color-blue3);
+            font-family: var(#{$font-rethink_sans});
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 126.632%; /* 37.99px */
+        }
+        p{
+            color: var(--Typography-paragraph, $color-paragraph);
+            text-align: center;
+            font-family: var(#{$font-inter});
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 170%; /* 27.2px */
+            text-transform: capitalize;
+        }
+        }
+    }
+ .buttonwrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            display: inline-flex;
+            padding: 15px 22px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 50px;
+            background: var(--Accent-Main, $color-red1);
+            color: #FFF;
+            font-family: var(#{$font-rethink_sans});
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border: none;
+       
+        }
+    }
+}

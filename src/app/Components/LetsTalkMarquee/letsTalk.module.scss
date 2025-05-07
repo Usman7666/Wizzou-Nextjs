@@ -1,0 +1,46 @@
+$font-rethink_sans : "--font-rethink_sans";
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large: 1200px;
+
+.dark{
+  background: #020E1A !important;
+  h1{
+    color: white !important;
+  }
+ 
+}
+
+.marqueeWrapper {
+  
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    h1{
+        animation: marquee-scroll 10s linear infinite;
+        color: var(--Colors-Neutral-Text-title, #000);
+        font-family: var(#{$font-rethink_sans});
+        font-size: 400px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 100px;
+        padding-left: 50%;
+        @media (max-width:$breakpoint-tablet) {
+        font-size: 200px;
+        padding: 40px;
+          }
+      }
+  }
+  
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
