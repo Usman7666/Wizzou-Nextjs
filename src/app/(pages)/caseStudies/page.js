@@ -13,7 +13,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 
-export default function caseStudies(){
+export default function CaseStudies(){
 
 
   const sectionRefs = useRef([]);

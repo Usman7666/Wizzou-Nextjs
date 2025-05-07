@@ -341,7 +341,7 @@ export default function GrowthService (){
             Predictive Analytics
             </h2>
             <p>
-            Make data-driven decisions with AI insights.
+            Make datadriven decisions with AI insights.
             </p>
           </div>
           </div>
@@ -425,7 +425,7 @@ export default function GrowthService (){
         <div className={style.contentdiv}>
           <h2 className={`${theme === 'dark' ? style.dark : ''}`}>Our Work Speaks for Itself</h2>
           <p className={`${theme === 'dark' ? style.dark : ''}`}>
-            Discover how we've helped businesses achieve their goals with
+            Discover how weve helped businesses achieve their goals with
             innovative designs, data-driven marketing, and seamless cloud
             solutions.
           </p>

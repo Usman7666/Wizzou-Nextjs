@@ -607,7 +607,7 @@ export default function Empowerment() {
                   </linearGradient>
                 </defs>
               </svg>
-              <h2>Infrastructure as a service (IaaS)</h2>
+              <h2>Infrastructure as a service IaaS</h2>
             </div>
             <div>
               <svg
@@ -644,7 +644,7 @@ export default function Empowerment() {
                   </linearGradient>
                 </defs>
               </svg>
-              <h2>Platform as a service (PaaS)</h2>
+              <h2>Platform as a service PaaS</h2>
             </div>
             <div>
               <svg
@@ -687,7 +687,7 @@ export default function Empowerment() {
                   </linearGradient>
                 </defs>
               </svg>
-              <h2>Software as a service (SaaS)</h2>
+              <h2>Software as a service SaaS</h2>
             </div>
           </div>
         </div>

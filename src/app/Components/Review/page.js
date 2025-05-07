@@ -3,7 +3,6 @@ import SwiperCore from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-SwiperCore.use([Navigation]);
 import styles from './review.module.scss'
 import { useTheme } from '@/context/ThemeContext'
 const testimonials = [
@@ -51,7 +50,7 @@ export default function Review(){
         <div className={`${styles.container} ${theme === 'dark' ? styles.dark : ''}`}>
             <section className={styles.review}>
                 <h1>
-                What People Are Saying?
+                What People Are Saying
                 </h1>
 
         <div className={styles.testimonialSlider}>
@@ -67,7 +66,7 @@ export default function Review(){
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-        >
+         modules={[Navigation]} >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index} className={styles.card}>
               <div className={styles.header}>

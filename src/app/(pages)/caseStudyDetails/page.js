@@ -251,7 +251,7 @@ export default function CaseStudyDetails(){
              </div>
               <div className={style.breakdiv}>
                 <p>
-                "Lörem ipsum dur vitrevis cyberhygien sasamma. Käkahet epir, fortad äsäsäs. Mjuk betalvägg kefabelt, liksom trivis fasade då dovöligen. Prekrosade divaligt ." - Beta Tester
+                &quot;Lörem ipsum dur vitrevis cyberhygien sasamma. Käkahet epir, fortad äsäsäs. Mjuk betalvägg kefabelt, liksom trivis fasade då dovöligen. Prekrosade divaligt . Beta Tester&quot;
                 </p>
               </div>
 

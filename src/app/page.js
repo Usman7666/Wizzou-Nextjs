@@ -268,7 +268,7 @@ export default function Home() {
         <div className={style.div3}>
           <div>
             <h3>Meet our expert</h3>
-            <p>Looking for design experts who can bring your vision to life?</p>
+            <p>Looking for design experts who can bring your vision to life</p>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -291,7 +291,7 @@ export default function Home() {
         <div className={style.contentdiv}>
           <h2>Our Work Speaks for Itself</h2>
           <p>
-            Discover how we've helped businesses achieve their goals with
+            Discover how we&apose;ve helped businesses achieve their goals with
             innovative designs, data-driven marketing, and seamless cloud
             solutions.
           </p>

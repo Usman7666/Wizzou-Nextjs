@@ -61,12 +61,14 @@ export default function CreateSection() {
             <h1>Development & Design</h1>
           </div>
           <p>
-          We are a dynamic digital agency committed to turning your ideas into reality. With expertise in development, design, digital marketing, and cloud hosting services, we empower businesses to thrive in a fast-paced digital world.          </p>
+          We are a dynamic digital agency committed to turning your ideas into reality. With expertise in development, design, digital marketing, and cloud hosting services, we empower businesses to thrive in a fast-paced digital world.   
+                 </p>
         </div>
         <div>
           <div className={style.herowrapper}>
             <h2>
-            From stunning designs to powerful development—your one-stop solution for websites, applications, branding, and more.            </h2>
+            From stunning designs to powerful development—your one-stop solution for websites, applications, branding, and more.    
+                    </h2>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
                 <circle cx="32.8699" cy="32.5703" r="32" fill="#FF3310"/>
@@ -216,7 +218,7 @@ export default function CreateSection() {
               </svg>
             </div>
             <h2>
-            Code Reviews & Optimi...
+            Code Reviews & Optimi.
             </h2>
             <p>
             Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam euismod viverra nisi malesuada venenatis. Vulputate adipiscing aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque neque.
@@ -341,7 +343,7 @@ export default function CreateSection() {
         <div className={style.contentdiv}>
           <h2 className={`${theme === 'dark' ? style.dark : ''}`}>Our Work Speaks for Itself</h2>
           <p className={`${theme === 'dark' ? style.dark : ''}`}>
-            Discover how we've helped businesses achieve their goals with
+            Discover how weve helped businesses achieve their goals with
             innovative designs, data-driven marketing, and seamless cloud
             solutions.
           </p>

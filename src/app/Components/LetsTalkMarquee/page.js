@@ -6,7 +6,7 @@ const LetsTalkMarquee = () => {
     return(
         <div className={`${theme === 'dark' ? style.dark : ''} ${style.marqueeWrapper}`}>
             <h1>
-            Let's Talk
+            Let&apos;s Talk
             </h1>
         </div>
     )
