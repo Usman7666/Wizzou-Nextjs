@@ -3,7 +3,6 @@ import style from './contact.module.scss'
 import Image from 'next/image'
 import { useTheme } from "../../../context/ThemeContext";
 import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css'; // or 'react-phone-input-2/lib/bootstrap.css' for a different look
 
 export default function ContactForm() {
   const { theme, toggleTheme } = useTheme();
