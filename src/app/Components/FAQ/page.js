@@ -1,3 +1,4 @@
+"use client"
 import style from './faq.module.scss'
 import { useTheme } from "../../../context/ThemeContext";
 import { useState } from 'react';
