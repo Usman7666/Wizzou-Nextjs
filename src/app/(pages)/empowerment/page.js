@@ -698,7 +698,7 @@ export default function Empowerment() {
         <div className={style.contentdiv}>
           <h2>Our Work Speaks for Itself</h2>
           <p>
-            Discover how we've helped businesses achieve their goals with
+            Discover how weve helped businesses achieve their goals with
             innovative designs, data-driven marketing, and seamless cloud
             solutions.
           </p>
@@ -722,7 +722,7 @@ export default function Empowerment() {
              <Review/>
              </div>
 
-      {/* Let's Talk Marquee */}
+      {/* Lets Talk Marquee */}
       <LetsTalkMarquee />
 
        {/* ContactForm */}
