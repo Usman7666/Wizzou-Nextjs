@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import styles from './review.module.scss';
 import { useTheme } from '@/context/ThemeContext';
 
-SwiperCore.use([Navigation]);
+
 
 const testimonials = [
   {
@@ -51,6 +51,10 @@ const testimonials = [
 
 export default function Review() {
   const { theme, toggleTheme } = useTheme();
+
+   useEffect(() => {
+    SwiperCore.use([Navigation]);
+  }, []);
   
   return(
     <div className={`${styles.container} ${theme === 'dark' ? styles.dark : ''}`}>
