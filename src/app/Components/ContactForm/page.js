@@ -2,7 +2,7 @@
 import style from './contact.module.scss'
 import Image from 'next/image'
 import { useTheme } from "../../../context/ThemeContext";
-import PhoneInput from 'react-phone-input-2';
+// import PhoneInput from 'react-phone-input-2';
 
 export default function ContactForm() {
   const { theme, toggleTheme } = useTheme();
@@ -73,7 +73,8 @@ export default function ContactForm() {
           <div className={style.form}>
             <input type="text" placeholder="Name"/>
             <input type="email" placeholder="Email Address"/>
-            <PhoneInput
+            <input type="number" placeholder="Pone number"/>
+            {/* <PhoneInput
                country={'us'}
                inputClass="phone-input-field" 
                containerClass="phone-input-container" 
@@ -94,7 +95,7 @@ export default function ContactForm() {
                  borderRight : 'none',
                  marginLeft: '1px'
                }}
-             />
+             /> */}
             <textarea placeholder="Your Message"></textarea>
             <div className={style.buttonWrapper}>
             <button>
