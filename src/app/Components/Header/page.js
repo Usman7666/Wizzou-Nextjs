@@ -17,7 +17,7 @@ function Header() {
     <header className={`${isOpen ? style.navOpen : ''}  ${theme === 'dark' ? style.dark : ''}`}>
       <nav className={`${style.main} ${isOpen ? style.navOpen : ''} ${theme === 'dark' ? style.dark : ''}`}>
         {theme === 'light' ? (
-          <Link href="/">
+          <Link href="#">
           <Image
             className={style.logo}
             alt="Logo"
@@ -27,7 +27,7 @@ function Header() {
           />
         </Link>
       ) : (
-        <Link href="/">
+        <Link href="#">
           <Image
             className={style.logo}
             alt="Logo"
@@ -40,7 +40,7 @@ function Header() {
 
         <ul className={`${style.menu} ${isOpen ? style.open : ""}`}>
           <li>
-            <Link href="/">Home</Link>
+            <Link href="#">Home</Link>
           </li>
           <li>
             <Link href="/creationServices" className={style.linktribes}>
