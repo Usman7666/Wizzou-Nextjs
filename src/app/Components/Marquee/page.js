@@ -1,5 +1,5 @@
 // src/components/Marquee.js
-
+"use client"
 import Image from 'next/image';
 import styles from './marquee.module.scss';  // Import the SCSS module
 import { useTheme } from "../../../context/ThemeContext";

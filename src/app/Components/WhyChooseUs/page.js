@@ -1,4 +1,4 @@
-
+"use client"
 import Image from 'next/image';
 import { useTheme } from "../../../context/ThemeContext";
 import style from './whychoosestyle.module.scss';

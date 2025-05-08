@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import style from "./footer.module.scss";
 import { useTheme } from "../../../context/ThemeContext";

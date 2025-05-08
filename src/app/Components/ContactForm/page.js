@@ -1,4 +1,4 @@
-
+"use client"
 import style from './contact.module.scss'
 import Image from 'next/image'
 import { useTheme } from "../../../context/ThemeContext";

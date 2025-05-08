@@ -1,4 +1,4 @@
-
+"use client"
 import style from "./letsTalk.module.scss"
 import { useTheme } from "../../../context/ThemeContext";
 const LetsTalkMarquee = () => {
