@@ -51,10 +51,6 @@ const testimonials = [
 
 export default function Review() {
   const { theme, toggleTheme } = useTheme();
-
-   useEffect(() => {
-    SwiperCore.use([Navigation]);
-  }, []);
   
   return(
     <div className={`${styles.container} ${theme === 'dark' ? styles.dark : ''}`}>
