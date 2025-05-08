@@ -5,7 +5,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import styles from './review.module.scss';
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from '../../../context/ThemeContext';
 
 
 
