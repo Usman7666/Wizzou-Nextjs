@@ -127,6 +127,7 @@ $font-inter : '--font-inter';
             }
 
         .logobg{
+            margin-top: 20px;
             width: 39.311px;
             height: 39.311px;
             display: flex;
@@ -144,6 +145,7 @@ $font-inter : '--font-inter';
             line-height: 126.632%; /* 28.498px */
         }
         h2{
+            
             color: var(--Typography-sub-heading, $color-blue3);
             font-family: var(#{$font-rethink_sans});
             font-size: 30px;

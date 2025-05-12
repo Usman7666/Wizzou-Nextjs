@@ -913,14 +913,15 @@ $font-inter : '--font-inter';
           font-weight: 400;
           line-height: normal;
           &:hover {
-            background: var(--Container-Fill-container-fill-primary-hover, lighten($color-blue, 8%));
+            color: white;
+            background: var(--Container-Fill-container-fill-primary-hover, #5da8ff); /* lighter blue */
             box-shadow: 0 4px 12px rgba(36, 138, 240, 0.3);
-            transform: translateY(-1px);
+           
           }
           &:active {
-            background: var(--Container-Fill-container-fill-primary-active, darken($color-blue, 8%));
+            background: var(--Container-Fill-container-fill-primary-active, #1a73e8); /* darker blue */
             box-shadow: 0 1px 3px rgba(36, 138, 240, 0.3);
-            transform: translateY(0);
+        
           }
       
           @media (max-width:$breakpoint-mobile) {
