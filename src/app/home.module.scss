@@ -53,6 +53,8 @@ $font-inter : '--font-inter';
           }
         }
       }
+    }.servicestitle{
+      color: white;
     }
     .ourservices{
       .contentdiv{
@@ -125,7 +127,7 @@ $font-inter : '--font-inter';
   .herosection{
       max-width: 1240px;
       width: 100%;
-      padding-top: 50px;
+      padding: 100px 25px 0px;
       margin: auto;
       @media (max-width:$breakpoint-large) {
         padding: 25px;        
@@ -143,11 +145,17 @@ $font-inter : '--font-inter';
          @media (max-width:$breakpoint-large) {
           font-size: 90px;        
       }
+      @media (max-width:$breakpoint-large) {
+        font-size: 60px;        
+    }
           @media (max-width:$breakpoint-tablet) {
           font-size: 55px;      
          }
          @media (max-width:$breakpoint-mobile) {
           font-size: 35px;      
+         }
+         @media (max-width:370) {
+          font-size: 28px;      
          }
       }
       .imagetop{
@@ -159,6 +167,7 @@ $font-inter : '--font-inter';
        
       }
       p{
+        max-width: 565px;
         font-family: var(#{$font-inter});
         font-size: 18px;
         font-style: normal;
@@ -169,7 +178,8 @@ $font-inter : '--font-inter';
         align-items: center;
         gap: 6px;
         @media (max-width:$breakpoint-mobile) {
-          font-size: 12px;      
+          font-size: 12px;    
+          padding: 8px 0;  
          }
       }
   }
@@ -198,7 +208,6 @@ $font-inter : '--font-inter';
     .divtop{
       display: flex;
       align-items: center;
-      padding-bottom: 20px;
   
       @media (max-width:$breakpoint-tablet) {
        flex-direction: column;
@@ -211,8 +220,11 @@ $font-inter : '--font-inter';
         font-style: normal;
         font-weight: 700;
         line-height: 130%; /* 65px */
+        @media (max-width:$breakpoint-large) {
+          font-size: 40px;      
+         }
         @media (max-width:$breakpoint-mobile) {
-          font-size: 35px;      
+          font-size: 28px;      
          }
       }
    
@@ -235,25 +247,30 @@ $font-inter : '--font-inter';
       display: flex;
       align-items: center;
       position: relative;
+      margin-top: 35px;
       gap:20px ;
       @media (max-width:$breakpoint-desktop) {
         flex-direction: column;     
    }
       .divblue{
         max-width: 438px;
-        padding: 20px 0px 20px 20px;
+        padding: 20px 20px 20px 20px;
         width: 100%;
-        height: 395.84px;
+        min-height: 395.84px;
         border-radius: 30px;
         background: var(--Primary-Main,$color-blue2 );
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        @media (max-width:$breakpoint-desktop) {
-          max-width: 100%;    
+        @media (max-width:$breakpoint-large) {
+          min-height: 100%;  
+     }
+       @media (max-width:$breakpoint-desktop) {
+        flex-direction: row;
+        max-width: 100%; 
      }
      @media (max-width:$breakpoint-mobile) {
-      height: 220px;
+      flex-direction: column;
      }
   
         h1{
@@ -284,7 +301,10 @@ $font-inter : '--font-inter';
           li{
             list-style: none;
             margin-left: -20px;
-  
+            .empimage{
+              height: 50px;
+              width: 50px;
+            }
             &:first-child{
               margin-left: 0;
             }
@@ -299,7 +319,7 @@ $font-inter : '--font-inter';
         video{
             max-width: 676.161px;
             width: 100%;
-            height: 395.84px;
+            height:100%;
             border-radius: 30px;
             @media (max-width:$breakpoint-desktop) {
              max-width: 100%;  
@@ -326,41 +346,47 @@ $font-inter : '--font-inter';
   }
 }
 
-
+.servicestitle{
+  padding: 50px 25px 0px;
+  max-width: 1240px;
+  margin: auto;
+  color: $color-blue3;
+  font-family: var(#{$font-rethink_sans});
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  @media (max-width:$breakpoint-mobile) {
+    font-size: 35px;      
+    padding: 50px 10px 0px;
+   }
+  
+}
 
   .ourservices{
     display: grid;
-    padding: 100px 0;
+    padding: 8px 25px 100px ;
     grid-template-columns: 1fr  1fr 257px;
+    gap: 20px;
     max-width: 1240px;
     width: 100%;
     margin: auto;
     @media (max-width:$breakpoint-large) {
-      padding:70px 25px;      
-      gap: 10px;  
+      padding: 25px;      
   }
   @media (max-width:$breakpoint-desktop) {
-    grid-template-columns: repeat(2, 1fr);
-    padding:70px 25px;      
-    gap: 50px;  
+    grid-template-columns: repeat(2, 1fr);      
+    gap: 30px;  
   }
-  @media (max-width:$breakpoint-mobile) {
+  @media (max-width:$breakpoint-tablet) {
     grid-template-columns: repeat(1, 1fr);    
+    padding: 0 10px ;
+    gap: 16px; 
    }
     .contentdiv{
-      h2{
-        color: $color-blue3;
-        font-family: var(#{$font-rethink_sans});
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        @media (max-width:$breakpoint-mobile) {
-          font-size: 35px;      
-         }
-        
-      }
+    
       p{
+        max-width: 405px;
         color: var(--Colors-Neutral-Text-body, $color-paragraph);
         font-family:var(#{$font-inter});
         font-size: 16px;
@@ -394,7 +420,7 @@ $font-inter : '--font-inter';
           background-color: #ffffff;
           cursor: pointer;
           transition: all 0.3s ease;
-          @media (max-width:$breakpoint-mobile) {
+          @media (max-width:$breakpoint-tablet) {
             max-width: 100%;     
             height: 60px;
            }
@@ -427,6 +453,7 @@ $font-inter : '--font-inter';
            }
           }
           button{
+            cursor: pointer;
             background-color: transparent;
             border: none;
             display: flex;
@@ -465,10 +492,10 @@ $font-inter : '--font-inter';
       max-width: 455px;
       height: 100%;
       @media (max-width:$breakpoint-large) {
-       max-width: 350px;
+       max-width:100%
     }
-    @media (max-width:$breakpoint-desktop) {
-     max-width: 100%; 
+    @media (max-width:$breakpoint-tablet) {
+     min-width: 100%; 
   }
     }
     .div3{
@@ -478,6 +505,10 @@ $font-inter : '--font-inter';
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 16px;
+      @media (max-width:$breakpoint-mobile) {
+        padding: 1rem;
+      }
      
       h3{
         color: var(--Colors-Neutral-Text-subtitle, $color-blue3);
@@ -489,6 +520,7 @@ $font-inter : '--font-inter';
         letter-spacing: -0.3px;
       }
       p{
+        padding-top: 4px;
         color: var(--Colors-Neutral-Text-body, $color-paragraph);
         font-family: var(#{$font-inter});
         font-size: 16px;
@@ -497,23 +529,31 @@ $font-inter : '--font-inter';
         line-height: 170%; /* 27.2px */
         letter-spacing: -0.16px;
       }
+      svg{
+        height: 50px;
+        width: 50px;
+      }
     }
   }
 
 
   .ourwork{
+    padding: 80px 25px;
+    @media (max-width:$breakpoint-tablet) {
+      padding:50px  10px;
+    }
     .contentdiv{
-      max-width: 1240px;
+      max-width: 1300px;
       width: 100%;
       margin: auto;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      @media (max-width:$breakpoint-large) {
-        padding: 25px;      
-    }
+      gap: 16px;
     @media (max-width:$breakpoint-tablet) {
      flex-direction: column;
      align-items: center; 
+     gap: 8px;
      }
       h2{
         color: var(--Colors-Neutral-Text-subtitle, $color-blue3);
@@ -522,15 +562,18 @@ $font-inter : '--font-inter';
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        @media (max-width:$breakpoint-large) {
+          font-size: 35px;
+        }
         @media (max-width:$breakpoint-mobile) {
-          font-size: 35px;      
+          font-size: 25px;      
          }
       }
       p{
+        padding-top: 12px;
         max-width: 566px;
         width: 100%;
         color: var(--Colors-Neutral-Text-body, $color-paragraph);
-        text-align: right;
         font-family: var(#{$font-inter});
         font-size: 16px;
         font-style: normal;
@@ -541,6 +584,7 @@ $font-inter : '--font-inter';
           text-align: center ;    
           }
           @media (max-width:$breakpoint-mobile) {
+            padding-top: 0px;
            font-size: 14px;      
           }
       }
@@ -558,9 +602,10 @@ $font-inter : '--font-inter';
       padding-top: 41px;
       @media (max-width:$breakpoint-tablet) {
         padding: 20px;
+        flex-direction: column;
        }
         @media (max-width:$breakpoint-mobile) {
-          flex-direction: column;
+        
           gap: 10px;    
         }
         button{
@@ -588,10 +633,11 @@ $font-inter : '--font-inter';
           @media (max-width:$breakpoint-tablet) {
             font-size: 16px;
             line-height: normal;
+            width: 100%;
+            height: 40px;
            }
            @media (max-width:$breakpoint-mobile) {  
-            width: 100%;
-           height: 40px;
+           height: 35px;
            }
         }
     }
@@ -599,7 +645,7 @@ $font-inter : '--font-inter';
   }
 
   .fivehundred{
-    padding: 50px 25px;
+    padding:  25px;
     @media (max-width: $breakpoint-desktop) {
       padding: 25px;  
   }
@@ -613,14 +659,22 @@ $font-inter : '--font-inter';
       border-radius: 50px;
       background: var(--Primary-Linear, linear-gradient(90deg, #006DE6 0%, #3D99FF 100%));
       display: flex;
-      padding: 100px 50px;
+      padding: 80px 50px;
       @media (max-width:$breakpoint-large) {
         padding: 70px 40px;
     }
-    @media (max-width:$breakpoint-tablet) {
+    @media (max-width:$breakpoint-desktop) {
+      padding: 40px;
+  }
+    @media (max-width:925px) {
       flex-direction: column;
       align-items: center;
-      padding: 30px 10px;
+      gap: 8px;
+      padding: 30px ;
+      }
+      @media (max-width:$breakpoint-mobile) {
+        padding: 20px;
+        border-radius: 18px;
       }
     
       h2{
@@ -632,7 +686,9 @@ $font-inter : '--font-inter';
         line-height: normal;
         max-width: 587.216px;
         width: 100%;
+        
         @media (max-width:$breakpoint-large) {
+          max-width: 100%;
         font-size: 43px;
         @media (max-width:$breakpoint-tablet) {
           font-size: 35px;
@@ -647,8 +703,9 @@ $font-inter : '--font-inter';
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        gap: 16px;
         h1{
+          margin-top: -20px;
           color: var(--Colors-Neutral-Text-white, #FFF);
           text-align: center;
           font-family: var(#{$font-rethink_sans});
@@ -657,13 +714,15 @@ $font-inter : '--font-inter';
           font-weight: 700;
           line-height: normal;
           @media (max-width:$breakpoint-tablet) {
+            margin-top: 0px;
            font-size: 100px;
             }
             @media (max-width:$breakpoint-mobile) {
-              font-size: 70px;      
+              font-size: 60px;      
              }
         }
         h4{
+        margin-top: -50px;
           color: var(--Colors-Neutral-Text-white, #FFF);
           text-align: center;
           font-family: var(#{$font-rethink_sans});
@@ -671,8 +730,12 @@ $font-inter : '--font-inter';
           font-style: normal;
           font-weight: 700;
           line-height: 167%; /* 41.75px */
+          @media (max-width:$breakpoint-tablet) {
+            margin-top: -28px;
+            }
         }
         p{
+          max-width: 490px;
           color: var(--Colors-Neutral-Text-white, #FFF);
           text-align: center; 
           /* Paragraph - Main/Regular */
@@ -681,8 +744,12 @@ $font-inter : '--font-inter';
           font-style: normal;
           font-weight: 400;
           line-height: 167%; /* 30.06px */
+          @media (max-width:$breakpoint-mobile) {
+            line-height: normal;
+          }
         }
         button{
+          cursor: pointer;
           border: none;
           display: inline-flex;
           height: 53px;
@@ -707,16 +774,19 @@ $font-inter : '--font-inter';
   max-width: 1240px;
   width: 100%;
   margin: auto ;
-  padding:  0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media (max-width:$breakpoint-large) {
+  @media (max-width:1280px) {
     padding: 0 25px;
+  }
+  @media (max-width:$breakpoint-mobile) {
+    padding: 10px;
   }
 
   h1{
+    max-width: 808px;
     color: var(--Colors-Neutral-Text-title, #000);
     text-align: center;
     font-family: var(#{$font-rethink_sans});
@@ -736,15 +806,17 @@ $font-inter : '--font-inter';
 
   .grids{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     padding-top: 50px;
-    @media (max-width:$breakpoint-large) {
+    @media (max-width:1280px) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
   }
-  @media (max-width:$breakpoint-tablet) {
+  @media (max-width:875px) {
     grid-template-columns: repeat(1, 1fr);
+    padding-top: 30px;
+    gap: 20px;
     }
     div{
       .imageWrapper {
@@ -754,9 +826,9 @@ $font-inter : '--font-inter';
 
         .blogimage{
           border-radius: 32px;
-          @media (max-width:$breakpoint-tablet) {
-            max-width: 100%;
-            }
+          height: 100%;
+          max-width: 400px;
+          width: 100%;
         }
       
         button{
@@ -791,7 +863,10 @@ $font-inter : '--font-inter';
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        padding: 8px 0;
+        padding: 20px 0;
+        @media (max-width:1280px) {
+          padding: 6px;
+        }
       }
       p{
         color: var(--Colors-Neutral-Text-body, $color-paragraph);
@@ -823,6 +898,7 @@ $font-inter : '--font-inter';
     flex-shrink: 0;
     border-radius: 50px;
     background: var(--Container-Fill-container-fill-secondary, $color-red1);
+    
   }
 }
 

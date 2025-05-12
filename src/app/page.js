@@ -103,10 +103,7 @@ export default function Home() {
         <div className={style.divtop}>
           <h2>Empowering Your Vision with Digital Excellence</h2>
           <p>
-            We are a dynamic digital agency committed to turning your ideas into
-            reality. With expertise in development, design, digital marketing,
-            and cloud hosting services, we empower businesses to thrive in a
-            fast-paced digital world.
+          We are a dynamic digital agency committed to turning your ideas into reality. With expertise in development, design, digital marketing, and cloud hosting services, we empower businesses to thrive in a fast-paced digital world. Our team combines innovation, strategy, and technology to deliver tailored solutions that drive results and foster growth.
           </p>
         </div>
         <div className={style.divbottom}>
@@ -117,7 +114,7 @@ export default function Home() {
             </div>
             <ul>
               <li>
-                <Image
+                <Image className={style.empimage}
                   alt="person 1"
                   height={70}
                   width={70}
@@ -125,7 +122,7 @@ export default function Home() {
                 />
               </li>
               <li>
-                <Image
+                <Image className={style.empimage}
                   alt="person 2"
                   height={70}
                   width={70}
@@ -133,7 +130,7 @@ export default function Home() {
                 />
               </li>
               <li>
-                <Image
+                <Image className={style.empimage}
                   alt="person 3"
                   height={70}
                   width={70}
@@ -141,7 +138,7 @@ export default function Home() {
                 />
               </li>
               <li>
-                <Image
+                <Image className={style.empimage}
                   alt="person 4"
                   height={70}
                   width={70}
@@ -189,10 +186,11 @@ export default function Home() {
       
       </section>
 
+      {/* Services Title */}
+      <h2 className={style.servicestitle}>Our Services</h2>
       {/* OurServices */}
       <section ref={addToRefs} className={style.ourservices}>
         <div className={style.contentdiv}>
-          <h2>Our Services</h2>
           <p>
             From web development to digital marketing and cloud hosting, we
             deliver tailored solutions to help your business thrive in the

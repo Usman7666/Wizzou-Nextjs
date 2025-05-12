@@ -45,6 +45,9 @@ $breakpoint-large: 1200px;
 
 .swiperContainer {
   padding: 3rem 1.5rem;
+  @media (max-width:$breakpoint-mobile) {
+    padding: 8px;
+  }
 }
 
 .swiperSlide {
@@ -77,6 +80,9 @@ $breakpoint-large: 1200px;
     border-radius: 0px;
     max-width: 300px;
 }
+@media (max-width:$breakpoint-mobile) {
+  padding: 8px;
+}
 }
 
 
@@ -84,6 +90,9 @@ $breakpoint-large: 1200px;
   position: relative;
   width: 100%;
   height: 358.944px;
+  @media (max-width:$breakpoint-large) {
+    height: 280px;
+  }
 
   button{
     position: absolute;
@@ -100,7 +109,6 @@ $breakpoint-large: 1200px;
     cursor: pointer;
     z-index: 1;
     color: var(--Container-Text-container-text-light-fixed, #FFF);
-    /* Paragraph/MD/Regular/Straight/Normal */
     font-family: var(#{$font-inter});
     font-size: 18px;
     font-style: normal;
@@ -117,6 +125,9 @@ $breakpoint-large: 1200px;
 
 .content {
   padding: 1rem;
+  @media (max-width:$breakpoint-mobile) {
+    padding: 5px;
+  }
 }
 
 .title {
@@ -146,12 +157,13 @@ $breakpoint-large: 1200px;
   justify-content: flex-end;
   gap: 20px;
   margin: -100px 50px 41px 0;
-  @media (max-width:$breakpoint-desktop) {
+  @media (max-width:1035px) {
    margin: 0px ;
    }
    
 
   button {
+    border:1px solid #D4D4D4 ;
     cursor: pointer;
     background-color: white;
     border-radius: 100%;

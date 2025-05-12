@@ -11,7 +11,7 @@ export default function ContactForm() {
         {/* Contact Form */}
        <section className={`${theme === 'dark' ? style.dark : ''} ${style.contactform}`}>
         <p>
-        Have a question or need assistance? We’re here to help! Reach out today, and let’s create something amazing together.
+        Have a question or need assistance? Were here to help! Reach out today, and let’s create something amazing together.
         </p>
 
         <div className={style.formdiv}>

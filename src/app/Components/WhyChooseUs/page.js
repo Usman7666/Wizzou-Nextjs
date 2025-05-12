@@ -82,14 +82,14 @@ export default function  WhyUs (){
                <Image className={style.centerimage}
                src="/images/whychooselogodark.png"
                alt='Logo'
-               height={390}
-               width={390}/>
+               height={500}
+               width={500}/>
                 :     
                 <Image className={style.centerimage}
                src="/images/whychooselogo.png"
                alt='Logo'
-               height={390}
-               width={390}/>
+               height={500}
+               width={500}/>
              }
  
                <div className={style.flexwrapper2}>

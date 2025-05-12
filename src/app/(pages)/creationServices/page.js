@@ -62,13 +62,13 @@ export default function CreateSection() {
           </div>
           <p>
           We are a dynamic digital agency committed to turning your ideas into reality. With expertise in development, design, digital marketing, and cloud hosting services, we empower businesses to thrive in a fast-paced digital world.   
-                 </p>
+          </p>
         </div>
         <div>
           <div className={style.herowrapper}>
             <h2>
             From stunning designs to powerful development—your one-stop solution for websites, applications, branding, and more.    
-                    </h2>
+            </h2>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
                 <circle cx="32.8699" cy="32.5703" r="32" fill="#FF3310"/>
@@ -337,21 +337,18 @@ export default function CreateSection() {
          
       </section>
 
-         {/* OurWork */}
-         <section  ref={addToRefs} className={`${theme === 'dark' ? style.dark : ''} ${style.ourwork}`}>
-        <div className={style.ourworkmain}>
-        <div className={style.contentdiv}>
-          <h2 className={`${theme === 'dark' ? style.dark : ''}`}>Our Work Speaks for Itself</h2>
-          <p className={`${theme === 'dark' ? style.dark : ''}`}>
-            Discover how weve helped businesses achieve their goals with
-            innovative designs, data-driven marketing, and seamless cloud
-            solutions.
-          </p>
-        </div>
-        <ProjectSwiper />
-        </div>
-   
-         </section>
+      {/* OurWork */}
+          <section ref={addToRefs} className={style.ourwork}>
+            <div className={style.contentdiv}>
+              <h2>Our Work Speaks for Itself</h2>
+              <p>
+                Discover how we&apose;ve helped businesses achieve their goals with
+                innovative designs, data-driven marketing, and seamless cloud
+                solutions.
+              </p>
+            </div>
+            <ProjectSwiper />
+          </section>
 
            {/* WhyUs */}
                   <div ref={addToRefs}>

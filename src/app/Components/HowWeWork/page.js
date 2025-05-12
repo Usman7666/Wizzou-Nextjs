@@ -13,8 +13,8 @@ export default function HowWork(){
           How Do We Work
           </h1>
           <div className={style.workgrid}>
-            <div>
-                <Image
+            <div> 
+                <Image 
                 src="/images/howwork1.png"
                 height={212}
                 width={221}
@@ -31,10 +31,10 @@ export default function HowWork(){
             </p>
             </div>
             <div>
-                <Image
+                <Image className={style.howworkimage2}
                 src="/images/howwork2.png"
-                height={212}
-                width={221}
+                height={148}
+                width={235}
                 alt='image'/>
             
             <div className={style.logobg}>
@@ -49,10 +49,10 @@ export default function HowWork(){
             </div>
 
             <div>
-                <Image
+                <Image className={style.howworkimage3}
                 src="/images/howwork3.png"
-                height={212}
-                width={221}
+                height={175}
+                width={184}
                 alt='image'/>
             
             <div className={style.logobg}>

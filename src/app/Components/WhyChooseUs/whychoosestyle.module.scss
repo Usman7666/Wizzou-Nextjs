@@ -88,23 +88,52 @@ $font-inter : '--font-inter';
     .grid{
         display: grid;
         padding: 50px 0;
-        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-        @media (max-width : $breakpoint-large) {
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        @media (max-width : 1137px) {
+            padding: 25px 0;
             grid-template-columns: 1fr;
         }
+        .flexwrapper1  :nth-child(odd){
+            svg{
+                margin-right: -35px;
+                @media (max-width:1137px) {
+                    margin-right: 0;
+                }
+            }
+           
+        }
+        .flexwrapper2  :nth-child(odd){
+            svg{
+                margin-left: -35px;
+                @media (max-width:1137px) {
+                    margin-left: 0;
+                }
+            }
+
+        }
+            
+      
         .flexwrapper1{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             gap: 30px;
-            @media (max-width : $breakpoint-large) {
+
+            @media (max-width : 1137px) {
                 align-items: flex-start;
             }
             .whychoosecontent{
                 display: flex;
                 align-items: center;
                 gap: 30px;
-                @media (max-width : $breakpoint-large) {
+
+                @media (max-width:$breakpoint-large) {
+                    gap: 0;
+                }
+              
+                @media (max-width : 1137px) {
+                    gap: 20px;
                     flex-direction: row-reverse;
                 }
                 @media (max-width: $breakpoint-mobile) {
@@ -150,33 +179,39 @@ $font-inter : '--font-inter';
                 svg{
                     min-height: 65px;
                     min-width: 65px;
+                    @media (max-width:1137px) {
+                        max-height: 65px;
+                        max-width: 65px;
+                    }
+                
                     @media (max-width: $breakpoint-mobile) {
-                        min-height: 40px;
-                        min-width: 40px;
+                        max-height: 40px;
+                        max-width: 40px;
                     }
                 }
             }
         }
 
         .centerimage{
-        width: 100%;
-        height: 100%;
-        @media (max-width : $breakpoint-large) {
-            width: 700px;
-            height: 700px;
+            height: 100%;
+            width: 100%;
+         @media (max-width:$breakpoint-large) {
             margin: auto;
-        }
-        @media (max-width: $breakpoint-desktop) {
-           height: 100%;
-           width: 100%;
+            height: 400px;
+            width: 400px;
          }
-      
+         @media (max-width:$breakpoint-mobile) {
+            height: 100%;
+            width: 100%;
+         }
+          
         }
 
         .flexwrapper2{
             display: flex;
             flex-direction: column;
-            gap: 50px;
+            justify-content: space-between;
+            gap: 30px;
 
             .whychoosecontent{
                 display: flex;
@@ -184,6 +219,9 @@ $font-inter : '--font-inter';
                 gap: 30px;
                 @media (max-width: $breakpoint-mobile) {
                     gap: 16px;
+                }
+                @media (max-width:$breakpoint-large) {
+                    gap: 10px;
                 }
 
                 div{
@@ -216,9 +254,14 @@ $font-inter : '--font-inter';
                 svg{
                     min-height: 65px;
                     min-width: 65px;
+                    @media (max-width:1137px) {
+                        max-height: 65px;
+                        max-width: 65px;
+                    }
+                
                     @media (max-width: $breakpoint-mobile) {
-                        min-height: 40px;
-                        min-width: 40px;
+                        max-height: 40px;
+                        max-width: 40px;
                     }
                 }
             }
