@@ -164,6 +164,7 @@ $font-inter : '--font-inter';
                         line-height: normal;
                     }
                     input{
+                        outline: none;
                         display: flex;
                         height: 55px;
                         padding: var(--Padding-padding-12px, 12px) var(--Padding-padding-18px, 18px);
@@ -179,6 +180,7 @@ $font-inter : '--font-inter';
             
             }
             .textareadiv{
+
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -193,6 +195,7 @@ $font-inter : '--font-inter';
                     line-height: normal;
                 }
                 textarea{
+                    outline: none;
                     width: 100%;
                     display: flex;
                     min-height: 234px;
@@ -225,6 +228,20 @@ $font-inter : '--font-inter';
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            &:hover {
+                border: none;
+                background:$color-red1; 
+                color: white;
+                box-shadow: 0 4px 12px rgba(255, 51, 16, 0.4); 
+                transform: translateY(-1px);
+              }
+              
+              &:active {
+                background: #E62E0D; 
+                box-shadow: 0 2px 6px rgba(255, 51, 16, 0.3);
+                transform: translateY(0);
+              }
+    
         }
 
         ul{

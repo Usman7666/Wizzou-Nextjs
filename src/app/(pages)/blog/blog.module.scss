@@ -194,7 +194,6 @@ $font-inter : '--font-inter';
                 display: inline-flex;
                 height: 32px;
                 max-width: 151px;
-                // padding: 11px 18px;
                 justify-content: center;
                 align-items: center;
                 gap: 7px;
@@ -316,7 +315,7 @@ $font-inter : '--font-inter';
         padding: 150px 25px;  
     }
     @media (max-width: $breakpoint-mobile) {
-        padding: 180px 10px; 
+        padding: 110px 10px; 
     }
     h1{
         color: var(--Heading-Main, #000);
@@ -329,32 +328,20 @@ $font-inter : '--font-inter';
             font-size: 40px;
         }
         @media (max-width: $breakpoint-mobile) {
-            font-size: 28px;
+            font-size: 24px;
+            text-align: center;
         }
     }
     .buttonsdiv{
-        display: grid;
-        grid-template-columns: repeat(7 ,1fr);
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: start;
         gap: 20px;
         padding-top: 41px;
-        @media (max-width:$breakpoint-large) {
-          grid-template-columns: repeat(4,1fr);
-           }
-        @media (max-width:$breakpoint-tablet) {
-            grid-template-columns: repeat(3,1fr);
-          padding: 20px;
-         }
-          @media (max-width:$breakpoint-mobile) {
-            grid-template-columns: repeat(2,1fr);
-            flex-direction: column;
-            gap: 10px;    
-          }
-          @media (max-width:410px) {
-            grid-template-columns: repeat(1,1fr);
-          padding: 20px;
-         }
+        @media (max-width:$breakpoint-mobile) {
+            padding-top: 10px;
+        }
           button{
             cursor: pointer;
             display: flex;
@@ -373,10 +360,20 @@ $font-inter : '--font-inter';
             font-weight: 700;
             line-height: 130%; /* 23.4px */
           
-            &:hover{
-              background: var(--Colors-Neutral-Text-subtitle, $color-red1);
-              color: white;
-            }
+            &:hover {
+                border: none;
+                background:$color-red1; 
+                color: white;
+                box-shadow: 0 4px 12px rgba(255, 51, 16, 0.4); 
+                transform: translateY(-1px);
+              }
+              
+              &:active {
+                background: #E62E0D; 
+                box-shadow: 0 2px 6px rgba(255, 51, 16, 0.3);
+                transform: translateY(0);
+              }
+    
             @media (max-width:$breakpoint-tablet) {
               font-size: 16px;
               line-height: normal;
@@ -389,50 +386,85 @@ $font-inter : '--font-inter';
       }
 
       .developmentgrid{
-        padding: 40px 0;
+        padding: 40px 25px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(396px, 1fr));
+        grid-template-columns: repeat(3 ,1fr);
         gap: 23px;
+        @media (max-width:$breakpoint-tablet) {
+            grid-template-columns: repeat(2 ,1fr);
+            padding: 20px 0;
+        }
         @media (max-width: $breakpoint-mobile) {
             grid-template-columns: 1fr;
         }
-        @media (max-width:$breakpoint-tablet) {
-            padding: 20px 0;
-        }
-      
         .card{
+            cursor: pointer;
             display: flex;
             flex-direction: column;
             gap: 4px;
+            @media (max-width:$breakpoint-mobile) {
+                align-items: center;
+                justify-content: center;
+            }
             .imagewrapper{
                 max-width: 396.924px;
                 width: 100%;
                 height: 300px;
-                flex-shrink: 0;
                 border-radius: 32px;
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media (max-width:$breakpoint-large) {
+                    max-width: 250px;
+                    max-height: 150px;
+                }
+           
+                .blogimage{
+                    height: 100%;
+                    width: 100%;
+                }
 
                 svg{
+                    cursor: pointer;
                     position: absolute;
                     bottom: 20px;
                     right: 20px;
                     z-index: 1;
+                    &:hover {
+                        border-radius: 100%;
+                        background: #E62E0D; 
+                        transform: scale(1.05); 
+                        box-shadow: 0 4px 12px                    rgba(255, 51, 16, 0.3);
+                      }
+                      &:active {
+                        transform: scale(0.98); 
+                      }
+
+                    @media (max-width:$breakpoint-large) {
+                        height: 40px;
+                        width: 40px;
+                    }
                 }
             }
 
         h2{
             color: var(--Typography-heading, #000);
             font-family: var(#{$font-rethink_sans});
-            font-size: 35px;
+            font-size: 25px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
 
+            @media (max-width: $breakpoint-desktop) {
+                font-size: 19px;
+            }
+            @media (max-width: $breakpoint-tablet) {
+                font-size: 18px;
+            }
+            
             @media (max-width: $breakpoint-mobile) {
-                font-size: 20px;
+                font-size: 17px;
             }
         }
 
@@ -440,14 +472,21 @@ $font-inter : '--font-inter';
             color: var(--Typography-paragraph, $color-paragraph);
             font-family: var(#{$font-inter});
             text-align: left;
-            font-size: 16px;
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
-            line-height: 180%; /* 28.8px */
-
+            line-height: 167%; /* 28.8px */
+             
+            @media (max-width:$breakpoint-desktop) {
+                line-height: 140%;
+                font-size: 16px;
+            }
             @media (max-width: $breakpoint-tablet) {
                 font-size: 14px;
-               
+                line-height: 150%;
+            }
+            @media (max-width:$breakpoint-mobile) {
+              text-align: center;
             }
             
         }
@@ -475,6 +514,20 @@ $font-inter : '--font-inter';
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            &:hover {
+                border: none;
+                background:$color-red1; 
+                color: white;
+                box-shadow: 0 4px 12px rgba(255, 51, 16, 0.4); 
+                transform: translateY(-1px);
+              }
+              
+              &:active {
+                background: #E62E0D; 
+                box-shadow: 0 2px 6px rgba(255, 51, 16, 0.3);
+                transform: translateY(0);
+              }
+    
         }
     }
  

@@ -75,6 +75,11 @@ $font-inter : '--font-inter';
                     .imagewrapper{
                         border-radius: 32px;
                     }
+                    .categorydiv{
+                        border-radius: 59px;
+                        background: var(--Container-Fill-container-fill-primary-soft, #041C33);
+                        
+                    }
                     h2{
                         color: white !important;
                     }
@@ -94,7 +99,7 @@ $font-inter : '--font-inter';
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    padding: 50px 0;
+    padding: 50px 25px;
     max-width: 1240px;
     width: 100%;
     margin: auto;
@@ -162,7 +167,7 @@ $font-inter : '--font-inter';
 }
 
 .contentsection{
-    padding: 50px 0;
+    padding: 1px 25px 50px 25px;
     max-width: 1240px;
     width: 100%;
     margin: auto;
@@ -275,6 +280,9 @@ $font-inter : '--font-inter';
                 font-size: 16px;
                 line-height: 130%;
             }
+            span{
+                color: #FF3310;
+            }
         }
         ul{
             display: flex;
@@ -322,19 +330,9 @@ $font-inter : '--font-inter';
             align-items: center;
             justify-content: center;
             position: relative;
-            video{
-                max-width: 676.161px;
+            video{   
                 width: 100%;
-                height: 395.84px;
                 border-radius: 30px;
-                @media (max-width:$breakpoint-desktop) {
-                 max-width: 100%;  
-                 height: 100%;
-                }
-                 @media (max-width:$breakpoint-mobile) {
-                  height: 100%;     
-                 }  
-            
               }
               svg{
                 cursor: pointer;
@@ -383,50 +381,109 @@ $font-inter : '--font-inter';
     }
 
     .developmentgrid{
-        padding: 40px 0;
+        padding: 40px 25px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(396px, 1fr));
+        grid-template-columns: repeat(3 ,1fr);
         gap: 23px;
+        @media (max-width:$breakpoint-tablet) {
+            grid-template-columns: repeat(2 ,1fr);
+            padding: 20px 0;
+        }
         @media (max-width: $breakpoint-mobile) {
             grid-template-columns: 1fr;
         }
-        @media (max-width:$breakpoint-tablet) {
-            padding: 20px 0;
-        }
-      
         .card{
+            cursor: pointer;
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 6px;
+            @media (max-width:$breakpoint-mobile) {
+                align-items: center;
+                justify-content: center;
+            }
             .imagewrapper{
                 max-width: 396.924px;
                 width: 100%;
                 height: 300px;
-                flex-shrink: 0;
                 border-radius: 32px;
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media (max-width:$breakpoint-large) {
+                    max-width: 250px;
+                    max-height: 150px;
+                }
+            
+                .blogimage{
+                    height: 100%;
+                    width: 100%;
+                }
 
                 svg{
+                    cursor: pointer;
                     position: absolute;
                     bottom: 20px;
                     right: 20px;
                     z-index: 1;
+                    &:hover {
+                        border-radius: 100%;
+                        background: #E62E0D; 
+                        transform: scale(1.05); 
+                        box-shadow: 0 4px 12px                    rgba(255, 51, 16, 0.3);
+                      }
+                      &:active {
+                        transform: scale(0.98); 
+                      }
+
+                    @media (max-width:$breakpoint-large) {
+                        height: 40px;
+                        width: 40px;
+                    }
                 }
+            }
+            .categorydiv{
+                cursor: pointer;
+                border-radius: 59px;
+                background: var(--Container-Fill-container-fill-primary-soft, #E9F3FD);
+                display: inline-flex;
+                height: 32px;
+                max-width: 151px;
+                padding: 11px 18px;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                color: var(--Container-Fill-container-fill-primary, #248AF0);
+                font-family: var(#{$font-rethink_sans});
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @media (max-width:$breakpoint-large) {
+                    height: 20px;
+                    width: 120px;
+                    font-size: 10px;
+                }
+
             }
 
         h2{
             color: var(--Typography-heading, #000);
             font-family: var(#{$font-rethink_sans});
-            font-size: 35px;
+            font-size: 25px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
 
+            @media (max-width: $breakpoint-desktop) {
+                font-size: 19px;
+            }
+            @media (max-width: $breakpoint-tablet) {
+                font-size: 18px;
+            }
+            
             @media (max-width: $breakpoint-mobile) {
-                font-size: 20px;
+                font-size: 17px;
             }
         }
 
@@ -434,14 +491,22 @@ $font-inter : '--font-inter';
             color: var(--Typography-paragraph, $color-paragraph);
             font-family: var(#{$font-inter});
             text-align: left;
-            font-size: 16px;
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
-            line-height: 180%; /* 28.8px */
+            line-height: 167%; /* 28.8px */
+
+            @media (max-width:$breakpoint-desktop) {
+                line-height: 140%;
+                font-size: 16px;
+            }
 
             @media (max-width: $breakpoint-tablet) {
                 font-size: 14px;
-               
+                line-height: 150%;
+            }
+            @media (max-width:$breakpoint-mobile) {
+              text-align: center;
             }
             
         }

@@ -3,8 +3,9 @@
 import Image from 'next/image';
 import { useTheme } from "../../../context/ThemeContext";
 import style from './HowWork.module.scss'
+import clsx from 'clsx';
 
-export default function HowWork(){
+export default function HowWork({showbtn}){
     const { theme, toggleTheme } = useTheme();
     return(
         <div className={`${style.container} ${theme === 'dark' ? style.dark : ''}`}>
@@ -66,7 +67,7 @@ export default function HowWork(){
             </div>
            
           </div>
-          <div className={style.buttonwrapper}>
+          <div className={`${clsx(showbtn ? style.btnshown : style.btnhidden)}`}>
            <button>
            Get Free Consultation
            </button>

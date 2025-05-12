@@ -68,7 +68,7 @@ export default function Footer() {
             <div className={style.Newsletter}>
               <h4 className={style.heading}>Newsletter</h4>
               <p>
-                Let’s come together and actively participate in the
+                Lets come together and actively participate in the
                 transformative changes taking place.
               </p>
               <div className={style.inputwrapper}>

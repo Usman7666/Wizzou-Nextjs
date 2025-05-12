@@ -185,7 +185,7 @@ export default function BlogPage(){
 
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
+              <Image className={style.blogimage}
               src="/images/blog1.png"
               height={300}
               width={387}
@@ -197,15 +197,15 @@ export default function BlogPage(){
               </svg>
             </div>
             <h2>
-            SSL certificates
+            This will be Blog Heading
             </h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam euismod viverra nisi malesuada venenatis. Vulputate adipiscing aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
+              <Image  className={style.blogimage}
                src="/images/blog2.png"
                height={300}
                width={387}
@@ -217,15 +217,15 @@ export default function BlogPage(){
               </svg>
             </div>
             <h2>
-            Colocation
+            This will be Blog Heading
             </h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam euismod viverra nisi malesuada venenatis. Vulputate adipiscing aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
+              <Image className={style.blogimage}
                 src="/images/blog3.png"
                 height={300}
                 width={387}
@@ -237,15 +237,15 @@ export default function BlogPage(){
               </svg>
             </div>
             <h2>
-            Microsoft / Office 365
+            This will be Blog Heading
             </h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam euismod viverra nisi malesuada venenatis. Vulputate adipiscing aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
+              <Image className={style.blogimage}
               src="/images/blog1.png"
               height={300}
               width={387}
@@ -257,15 +257,15 @@ export default function BlogPage(){
               </svg>
             </div>
             <h2>
-            SSL certificates
+            This will be Blog Heading
             </h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam euismod viverra nisi malesuada venenatis. Vulputate adipiscing aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
+              <Image className={style.blogimage}
                src="/images/blog2.png"
                height={300}
                width={387}
@@ -277,15 +277,15 @@ export default function BlogPage(){
               </svg>
             </div>
             <h2>
-            Colocation
+            This will be Blog Heading
             </h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam euismod viverra nisi malesuada venenatis. Vulputate adipiscing aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
+              <Image className={style.blogimage}
                 src="/images/blog3.png"
                 height={300}
                 width={387}
@@ -297,15 +297,15 @@ export default function BlogPage(){
               </svg>
             </div>
             <h2>
-            Microsoft / Office 365
+            This will be Blog Heading
             </h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam euismod viverra nisi malesuada venenatis. Vulputate adipiscing aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
+              <Image className={style.blogimage}
               src="/images/blog1.png"
               height={300}
               width={387}
@@ -317,15 +317,15 @@ export default function BlogPage(){
               </svg>
             </div>
             <h2>
-            SSL certificates
+            This will be Blog Heading
             </h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam euismod viverra nisi malesuada venenatis. Vulputate adipiscing aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
+              <Image className={style.blogimage}
                src="/images/blog2.png"
                height={300}
                width={387}
@@ -337,15 +337,15 @@ export default function BlogPage(){
               </svg>
             </div>
             <h2>
-            Colocation
+            This will be Blog Heading
             </h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam euismod viverra nisi malesuada venenatis. Vulputate adipiscing aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
+              <Image className={style.blogimage}
                 src="/images/blog3.png"
                 height={300}
                 width={387}
@@ -357,10 +357,10 @@ export default function BlogPage(){
               </svg>
             </div>
             <h2>
-            Microsoft / Office 365
+            This will be Blog Heading
             </h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam euismod viverra nisi malesuada venenatis. Vulputate adipiscing aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
         </div>

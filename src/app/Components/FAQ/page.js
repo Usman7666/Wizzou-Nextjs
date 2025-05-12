@@ -64,7 +64,6 @@ export default function FAQ() {
                     </div>
                 ))}
 
-
                 <h1 className={style.ContactHeading}>
                 Contact us below if you any more questions.
                 </h1>

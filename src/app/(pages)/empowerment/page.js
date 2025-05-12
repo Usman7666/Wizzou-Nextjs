@@ -693,18 +693,18 @@ export default function Empowerment() {
         </div>
       </section>
 
-      {/* OurWork */}
-      <section ref={addToRefs} className={style.ourwork}>
-        <div className={style.contentdiv}>
-          <h2>Our Work Speaks for Itself</h2>
-          <p>
-            Discover how weve helped businesses achieve their goals with
-            innovative designs, data-driven marketing, and seamless cloud
-            solutions.
-          </p>
-        </div>
-        <ProjectSwiper />
-      </section>
+          {/* OurWork */}
+          <section ref={addToRefs} className={style.ourwork}>
+            <div className={style.contentdiv}>
+              <h2>Our Work Speaks for Itself</h2>
+              <p>
+                Discover how we&apose;ve helped businesses achieve their goals with
+                innovative designs, data-driven marketing, and seamless cloud
+                solutions.
+              </p>
+            </div>
+            <ProjectSwiper />
+          </section>
 
       {/* WhyUs */}
              <div ref={addToRefs}>

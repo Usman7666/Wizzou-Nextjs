@@ -117,6 +117,7 @@ $font-inter : '--font-inter';
       display: flex;
       justify-content: space-between;
       .stars {
+        cursor: pointer;
         color: #fbbf24; 
         font-size: 25px;
         @media (max-width:$breakpoint-mobile) {
@@ -174,6 +175,7 @@ $font-inter : '--font-inter';
       gap: 20px;
       padding: 38px 0;
       button{
+        cursor: pointer;
         width: 50.142px;
         height: 50.142px;
         stroke-width: 1px;
@@ -181,6 +183,17 @@ $font-inter : '--font-inter';
         border-radius: 100%;
         background: transparent;
         border: 1px solid #D4D4D4;
+        &:hover {
+          background-color: #F8F8F8;
+          border-color: #B0B0B0;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transform: translateY(-1px);
+        }
+        &:active {
+          background-color: #EEEEEE;
+          transform: translateY(0);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
       }
     }
  }

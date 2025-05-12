@@ -65,12 +65,13 @@ export default function CaseStudies(){
             </div>
 
         </div>
-        <div>
+        <div className={style.maincontent}>
         <Image className={style.heroImage}
             src="/images/SeoTopbanner.png" 
             alt='ProgrammingGay'
             height={513}
             width={822}
+            
           />
           <div className={style.herowrapper}>
             <div className={style.stats}>
@@ -104,17 +105,17 @@ export default function CaseStudies(){
       </section>
 
          {/* OurWork */}
-         <section ref={addToRefs} className={style.OurWorkSection}>
+        <section ref={addToRefs} className={style.OurWorkSection}>
         <h1>
         Our Work Speaks for Itself
         </h1>
         <p>
-        Discover how we’ve helped businesses achieve their goals with innovative designs, data-driven marketing, and seamless cloud solutions.
+        Discover how weve helped businesses achieve their goals with innovative designs, data-driven marketing, and seamless cloud solutions.
         </p>
         <div ref={addToRefs} className={style.OurWorkgrid}>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-                <button>
+                <button className={style.marketingbutton}>
                 Marketing
                 </button>
               <Image className={style.cardimage}
@@ -197,7 +198,7 @@ export default function CaseStudies(){
           </div>
         </div>
 
-        <button>
+        <button className={style.seemorebutton}>
         See More Case Studies
         </button>
         </section>

@@ -143,7 +143,6 @@ export default function AboutUs(){
            </h1>
             <div className={style.maingrid}>
                 <div className={style.headingdiv}>
-              
                 <Image className={style.experienceimage}
                 src="/images/digitalexperienceimage.png"
                 height={343}
@@ -298,7 +297,7 @@ export default function AboutUs(){
 
           {/* WhyUs */}
           <div ref={addToRefs}>
-          <WhyUs/>
+          <WhyUs hidebtn={true}/>
           </div>
          
 

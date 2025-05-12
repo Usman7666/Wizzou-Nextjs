@@ -119,20 +119,21 @@ export default function BlogDetails() {
           <p>
             Lörem ipsum dur vitrevis cyberhygien sasamma. Käkahet epir, fortad
             äsäsäs. Mjuk betalvägg kefabelt, liksom trivis fasade då dovöligen.
-            Prekrosade divaligt kuddbok pseudon. Soss obel favangen, nöska.
+            Prekrosade divaligt <span>kuddbok pseudon.</span><br/> Soss obel favangen, nöska.
             Siling vönera jåtebel gör i hämndporr. Kick lon paravande, ana.
             Decigyheten por exoliga par kontradefenar. Sonas pohisade när ren
-            lonit ett fat. Sora pott, bivafask. Bende Zoombombning om
-            lådvinsalkoholism. Ar spegt plastbanta. Artdöden reasar tvodd var.
+            lonit ett fat. Sora <span>pott, bivafask.</span> Bende Zoombombning om
+            lådvinsalkoholism. Ar spegt plastbanta.<br/> Artdöden reasar tvodd var.
             Dode öligen. Spedost parask om än ses fas. Infrafar udat hongar,
-            miligt utvigning. Min onade, or mangen sor. Dud kedonat spess,
-            kosläpp. Saning flyttstajla, metanomi osäre. Akägt iv hexasärade.
+            miligt utvigning.<br/>
+             Min onade, or mangen sor. Dud kedonat spess,
+            kosläpp. Saning flyttstajla, metanomi osäre. Akägt iv hexasärade.<br/>
             Dädat rede. Hjulboja eun padilig mos. Hyponar givomat religen
             infrarengen av homohass. Resk poling. Fotoplastisk krokror virtad
             och multinas. Treskapet des flexitarian. Faskapet dijönas att
-            makront oaktat telektig. Kroppsaktivism eudade. Elektropod treng.
+            makront oaktat telektig. Kroppsaktivism eudade. <br/> Elektropod treng.
             Saktig nyhetsbok ifall dektigt. Degon epinade decibel för renysam.
-            Neheten gubelt progynivis och dekadev pokåktig. Ede mon. Eupade
+            Neheten gubelt progynivis och dekadev pokåktig.<br/> Ede mon. Eupade
             erat, har sang ik. Cli-fi jär. Ohese homong ojöre: menskonst då
             åjögt.
           </p>
@@ -289,94 +290,73 @@ export default function BlogDetails() {
         <h2>Similar Articles</h2>
 
         <div className={style.developmentgrid}>
-          <div className={style.card}>
+        <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
-                src="/images/blog1.png"
-                height={300}
-                width={387}
-                alt="card1"
+              <Image className={style.blogimage}
+              src="/images/blog1.png"
+              height={300}
+              width={387}
+              alt='card1'
               />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="65"
-                height="65"
-                viewBox="0 0 65 65"
-                fill="none"
-              >
-                <circle cx="32.5132" cy="32.626" r="32" fill="#FF3310" />
-                <path
-                  d="M44.7853 22.107L27.2537 22.107L27.2537 24.579L40.5515 24.5877L22.8708 42.2684L24.624 44.0215L42.3046 26.3409L42.3134 39.6386H44.7853L44.7853 22.107Z"
-                  fill="white"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+              <circle cx="32.5132" cy="32.626" r="32" fill="#FF3310"/>
+              <path d="M44.7853 22.107L27.2537 22.107L27.2537 24.579L40.5515 24.5877L22.8708 42.2684L24.624 44.0215L42.3046 26.3409L42.3134 39.6386H44.7853L44.7853 22.107Z" fill="white"/>
               </svg>
             </div>
-            <h2>SSL certificates</h2>
+            <div className={style.categorydiv}>
+              <a href="#">Category Name</a>
+            </div>
+            <h2>
+            This will be Blog Heading
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam
-              euismod viverra nisi malesuada venenatis. Vulputate adipiscing
-              aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque
-              neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
-                src="/images/blog2.png"
-                height={300}
-                width={387}
-                alt="card2"
+              <Image  className={style.blogimage}
+               src="/images/blog2.png"
+               height={300}
+               width={387}
+              alt='card2'
               />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="65"
-                height="65"
-                viewBox="0 0 65 65"
-                fill="none"
-              >
-                <circle cx="32.5132" cy="32.626" r="32" fill="#FF3310" />
-                <path
-                  d="M44.7853 22.107L27.2537 22.107L27.2537 24.579L40.5515 24.5877L22.8708 42.2684L24.624 44.0215L42.3046 26.3409L42.3134 39.6386H44.7853L44.7853 22.107Z"
-                  fill="white"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+              <circle cx="32.5132" cy="32.626" r="32" fill="#FF3310"/>
+              <path d="M44.7853 22.107L27.2537 22.107L27.2537 24.579L40.5515 24.5877L22.8708 42.2684L24.624 44.0215L42.3046 26.3409L42.3134 39.6386H44.7853L44.7853 22.107Z" fill="white"/>
               </svg>
             </div>
-            <h2>Colocation</h2>
+            <div className={style.categorydiv}>
+              <a href="#">Category Name</a>
+            </div>
+            <h2>
+            This will be Blog Heading
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam
-              euismod viverra nisi malesuada venenatis. Vulputate adipiscing
-              aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque
-              neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
           <div className={style.card}>
             <div className={style.imagewrapper}>
-              <Image
+              <Image className={style.blogimage}
                 src="/images/blog3.png"
                 height={300}
                 width={387}
-                alt="card3"
+              alt='card3'
               />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="65"
-                height="65"
-                viewBox="0 0 65 65"
-                fill="none"
-              >
-                <circle cx="32.5132" cy="32.626" r="32" fill="#FF3310" />
-                <path
-                  d="M44.7853 22.107L27.2537 22.107L27.2537 24.579L40.5515 24.5877L22.8708 42.2684L24.624 44.0215L42.3046 26.3409L42.3134 39.6386H44.7853L44.7853 22.107Z"
-                  fill="white"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+              <circle cx="32.5132" cy="32.626" r="32" fill="#FF3310"/>
+              <path d="M44.7853 22.107L27.2537 22.107L27.2537 24.579L40.5515 24.5877L22.8708 42.2684L24.624 44.0215L42.3046 26.3409L42.3134 39.6386H44.7853L44.7853 22.107Z" fill="white"/>
               </svg>
             </div>
-            <h2>Microsoft / Office 365</h2>
+            <div className={style.categorydiv}>
+              <a href="#">Category Name</a>
+            </div>
+            <h2>
+            This will be Blog Heading
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Ultrices convallis quam
-              euismod viverra nisi malesuada venenatis. Vulputate adipiscing
-              aliquet pellentesque vitae. Nulla risus fusce aliquam sed natoque
-              neque.
+            Lörem ipsum protism soködade att pseudoligen semick, transcism heteromatisk och heteroska metrogam endotyp. 
             </p>
           </div>
         </div>

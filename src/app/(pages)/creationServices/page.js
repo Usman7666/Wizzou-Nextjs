@@ -357,8 +357,8 @@ export default function CreateSection() {
                  
 
          {/* HowWeWork */}
-         <div ref={addToRefs}>
-         <HowWork/>
+         <div ref={addToRefs} >
+         <HowWork showbtn={true}/>
          </div>
      
 

@@ -101,11 +101,9 @@ $font-inter : '--font-inter';
       padding-top: 16px;
       }
       
-   
-    
       .listdiv{
-      
         .Contactimage{
+          object-fit: cover;
           border-radius: 30px;
           @media (max-width:$breakpoint-desktop) {
             max-width: 100%;
@@ -124,6 +122,7 @@ $font-inter : '--font-inter';
            gap: 16px;
   
           li{
+            cursor: pointer;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -166,6 +165,7 @@ $font-inter : '--font-inter';
           gap: 16px;
           }
         input{
+          outline: none;
           padding: 20px 18px;
           border-radius: var(--Radius-radius-infinity, 9999px);
           border: var(--stroke-stroke-sm, 1px) solid var(--Container-Stroke-container-stroke-dark-light, $color-input);
@@ -183,6 +183,7 @@ $font-inter : '--font-inter';
         }
 
         textarea{
+          outline: none;
           min-height: 182px;
            padding: 18px 18px 88px 18px;
           border-radius: var(--Radius-radius-md-lg, 20px);
@@ -211,6 +212,17 @@ $font-inter : '--font-inter';
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            &:hover {
+              background: #FF4A2A; 
+              box-shadow: 0 4px 12px rgba(255, 51, 16, 0.4); 
+              transform: translateY(-1px);
+            }
+            
+            &:active {
+              background: #E62E0D; 
+              box-shadow: 0 2px 6px rgba(255, 51, 16, 0.3);
+              transform: translateY(0);
+            }
           }
         }
        

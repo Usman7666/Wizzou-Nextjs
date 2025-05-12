@@ -55,7 +55,7 @@ export default function SeoServices(){
         <div className={`${style.container} ${theme === 'dark' ? style.dark : ''}`}>
         <Header/>
 
-        {/* HeroServices */}
+        {/* HeroSection */}
         <section ref={addToRefs} className={style.herosection}>
             <h1>
             SEO (Search Engine Optimization)
@@ -74,6 +74,7 @@ export default function SeoServices(){
         <p>
         We are a dynamic digital agency committed to turning your ideas into reality. With expertise in development, design, digital marketing, and cloud hosting services, we empower businesses to thrive in a fast-paced digital world.
         </p>
+        <div className={style.bottomline}></div>
         <div ref={addToRefs} className={style.grid}>
             <div className={style.contentwrapper}>
                 <h2>
@@ -344,10 +345,18 @@ export default function SeoServices(){
         </button>
         </section>
 
-        {/* Slider */}
-        <div ref={addToRefs}>
-        <ProjectSwiper/>
-        </div>
+           {/* OurWork */}
+           <section ref={addToRefs} className={style.ourwork}>
+            <div className={style.contentdiv}>
+              <h2>Our Work Speaks for Itself</h2>
+              <p>
+                Discover how we&apose;ve helped businesses achieve their goals with
+                innovative designs, data-driven marketing, and seamless cloud
+                solutions.
+              </p>
+            </div>
+            <ProjectSwiper />
+          </section>
     
 
         {/* Stats */}
@@ -355,6 +364,7 @@ export default function SeoServices(){
             <h1>
             Stats that Speak for Us
             </h1>
+            <div className={style.maingrid}>
             <div className={style.statgrid}>
                 <div className={style.stat1}>
                     <Image className={style.stat1image}
@@ -390,13 +400,16 @@ export default function SeoServices(){
                         </p>
                 </div>
                 </div>
-                <Image className={style.stat3}
+            </div>
+            <Image className={style.stat3}
                 src="/images/stat2.png"
                 height={643}
                 width={399}
                 alt='stat2'
                 />
             </div>
+         
+           
 
             <button>
         Get Free Consultation
