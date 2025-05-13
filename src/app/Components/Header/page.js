@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import style from "./header.module.scss";
 import Link from "next/link";
@@ -6,18 +6,16 @@ import Link from "next/link";
 import { useState } from "react";
 import { useTheme } from "@/context/ThemeContext";
 
-
 function Header() {
-    const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
-   
-    const toggleNavbar = () => {
+
+  const toggleNavbar = () => {
     setIsOpen(!isOpen);
     document.body.style.overflow = isOpen ? "auto" : "hidden";
   };
 
   return (
-
     <header
       className={`${isOpen ? style.navOpen : ""}  ${
         theme === "dark" ? style.dark : ""
@@ -29,7 +27,7 @@ function Header() {
         }`}
       >
         {theme === "light" ? (
-          <Link href="/home">
+          <Link href="#">
             <Image
               className={style.logo}
               alt="Logo"
@@ -39,7 +37,7 @@ function Header() {
             />
           </Link>
         ) : (
-          <Link href="/home">
+          <Link href="#">
             <Image
               className={style.logo}
               alt="Logo"
@@ -52,24 +50,23 @@ function Header() {
 
         <ul className={`${style.menu} ${isOpen ? style.open : ""}`}>
           <li>
-            <Link href="/home">Home</Link>
+            <Link href="#">Home</Link>
           </li>
           <li>
             <Link href="/creationServices" className={style.linktribes}>
               Tribes
-           <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={12}
-  height={7}
-  viewBox="0 0 12 7"
-  fill="none"
->
-  <path
-    d="M11.5407 0.547579C11.4482 0.454875 11.3383 0.381328 11.2173 0.331146C11.0964 0.280965 10.9667 0.255135 10.8357 0.255135C10.7047 0.255135 10.5751 0.280965 10.4541 0.331146C10.3331 0.381328 10.2232 0.454875 10.1307 0.547579L6.25071 4.42758L2.37071 0.547579C2.18373 0.360601 1.93014 0.255558 1.66571 0.255558C1.40129 0.255558 1.14769 0.360601 0.96071 0.547579C0.773732 0.734556 0.668691 0.988152 0.668691 1.25258C0.668691 1.517 0.773732 1.7706 0.96071 1.95758L5.55071 6.54758C5.64322 6.64028 5.75311 6.71383 5.87409 6.76401C5.99506 6.81419 6.12474 6.84002 6.25571 6.84002C6.38668 6.84002 6.51636 6.81419 6.63733 6.76401C6.75831 6.71383 6.8682 6.64028 6.96071 6.54758L11.5507 1.95758C11.9307 1.57758 11.9307 0.937579 11.5407 0.547579Z"
-    fill="#262626"
-  />
-</svg>
-
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={12}
+                height={7}
+                viewBox="0 0 12 7"
+                fill="none"
+              >
+                <path
+                  d="M11.5407 0.547579C11.4482 0.454875 11.3383 0.381328 11.2173 0.331146C11.0964 0.280965 10.9667 0.255135 10.8357 0.255135C10.7047 0.255135 10.5751 0.280965 10.4541 0.331146C10.3331 0.381328 10.2232 0.454875 10.1307 0.547579L6.25071 4.42758L2.37071 0.547579C2.18373 0.360601 1.93014 0.255558 1.66571 0.255558C1.40129 0.255558 1.14769 0.360601 0.96071 0.547579C0.773732 0.734556 0.668691 0.988152 0.668691 1.25258C0.668691 1.517 0.773732 1.7706 0.96071 1.95758L5.55071 6.54758C5.64322 6.64028 5.75311 6.71383 5.87409 6.76401C5.99506 6.81419 6.12474 6.84002 6.25571 6.84002C6.38668 6.84002 6.51636 6.81419 6.63733 6.76401C6.75831 6.71383 6.8682 6.64028 6.96071 6.54758L11.5507 1.95758C11.9307 1.57758 11.9307 0.937579 11.5407 0.547579Z"
+                  fill="#262626"
+                />
+              </svg>
             </Link>
           </li>
           <li>
@@ -81,8 +78,14 @@ function Header() {
           <li>
             <Link href="/contactUs">Contact Us</Link>
           </li>
-          <select name="language" id="language-select" className={style.listlanguage}>
-            <option value="en" className={style.option}>English</option>
+          <select
+            name="language"
+            id="language-select"
+            className={style.listlanguage}
+          >
+            <option value="en" className={style.option}>
+              English
+            </option>
           </select>
         </ul>
         <div className={style.mainright}>
@@ -164,8 +167,14 @@ function Header() {
             </svg>
           </button>
 
-          <select name="language-short" id="language-short-select" className={`${style.select} ${isOpen ? style.close : ""}`}>
-            <option value="en" className={style.option}>EN</option>
+          <select
+            name="language-short"
+            id="language-short-select"
+            className={`${style.select} ${isOpen ? style.close : ""}`}
+          >
+            <option value="en" className={style.option}>
+              EN
+            </option>
           </select>
 
           <div onClick={toggleNavbar} className={style.hamburger}>
@@ -223,7 +232,6 @@ function Header() {
         </div>
       </nav>
     </header>
- 
   );
 }
 
