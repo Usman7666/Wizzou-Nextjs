@@ -1,9 +1,9 @@
-"use client"
+
 import Image from "next/image";
 import style from "./footer.module.scss";
-import { useTheme } from "../../../context/ThemeContext";
-export default function Footer() {
-  const { theme, toggleTheme } = useTheme();
+import Link from "next/link";
+export default function Footer({theme}) {
+ 
   return (
     <div className={`${theme === 'dark' ? style.dark : ''} ${style.footerContainer}`}>
       {/* Footer */}
@@ -15,17 +15,17 @@ export default function Footer() {
                 <h4 className={style.heading}>Work</h4>
               </li>
               <li>
-                <a href="/caseStudies">Case Studies</a>
+                <Link href="/caseStudies">Case Studies</Link>
               </li>
               <li>
-                <a href="/empowerment">Empowerment</a>
+                <Link href="/empowerment">Empowerment</Link>
               </li>
              
               <li>
-                <a href="/blog">Blogs</a>
+                <Link href="/blog">Blogs</Link>
               </li>
               <li>
-                <a href="/blogDetails">Blog Details</a>
+                <Link href="/blogDetails">Blog Details</Link>
               </li>
              
             </ul>
@@ -35,16 +35,16 @@ export default function Footer() {
                 <h4 className={style.heading}>Quick Links</h4>
               </li>
               <li>
-                <a href="#">Login</a>
+                <Link href="#">Login</Link>
               </li>
               <li>
-                <a href="#">Webmail</a>
+                <Link href="#">Webmail</Link>
               </li>
               <li>
-                <a href="#">Partners</a>
+                <Link href="#">Partners</Link>
               </li>
               <li>
-                <a href="#">Careers</a>
+                <Link href="#">Careers</Link>
               </li>
             </ul>
           </div>
@@ -55,13 +55,13 @@ export default function Footer() {
                 <h4 className={style.heading}>Services</h4>
               </li>
               <li>
-                <a href="/growthService">Growth Services</a>
+                <Link href="/growthService">Growth Services</Link>
               </li>
               <li>
-                <a href="SeoServices">Seo Services</a>
+                <Link href="SeoServices">Seo Services</Link>
               </li>
               <li>
-                <a href="/creationServices">creation Services</a>
+                <Link href="/creationServices">creation Services</Link>
               </li>
             </ul>
 
