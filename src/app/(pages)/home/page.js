@@ -1,3 +1,4 @@
+"use client"
 import style from "./home.module.scss";
 import Header from "@/app/Components/Header/page";
 import Image from "next/image";
@@ -8,8 +9,11 @@ import ContactForm from "../../Components/ContactForm/page";
 import Footer from "../../Components/Footer/page";
 import AnimatedSections from "../../Components/GSAP/page";
 import VideoPlayer from "@/app/Components/Video/page";
+import { useTheme } from "@/context/ThemeContext";
 
-export default function HomePage({ theme }) {
+export default function HomePage() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <div className={`${theme === "dark" ? style.dark : ""} ${style.container}`}>
       <Header />
@@ -27,10 +31,10 @@ export default function HomePage({ theme }) {
             />
           </div>
           <p>
-            <svg
+           <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
+              width={18}
+              height={18}
               viewBox="0 0 18 18"
               fill="none"
             >
@@ -40,6 +44,7 @@ export default function HomePage({ theme }) {
                 fill="#999999"
               />
             </svg>
+
             Your one-stop digital agency for development, marketing, and cloud
             solutions.
           </p>

@@ -1,11 +1,17 @@
-
+"use client";
 import Image from "next/image";
 import style from "./footer.module.scss";
 import Link from "next/link";
-export default function Footer({theme}) {
- 
+import { useTheme } from "@/context/ThemeContext";
+export default function Footer() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
-    <div className={`${theme === 'dark' ? style.dark : ''} ${style.footerContainer}`}>
+    <div
+      className={`${theme === "dark" ? style.dark : ""} ${
+        style.footerContainer
+      }`}
+    >
       {/* Footer */}
       <footer className={style.footer}>
         <div className={style.links}>
@@ -20,14 +26,13 @@ export default function Footer({theme}) {
               <li>
                 <Link href="/empowerment">Empowerment</Link>
               </li>
-             
+
               <li>
                 <Link href="/blog">Blogs</Link>
               </li>
               <li>
                 <Link href="/blogDetails">Blog Details</Link>
               </li>
-             
             </ul>
 
             <ul>
@@ -76,24 +81,24 @@ export default function Footer({theme}) {
                 <button>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="13"
+                    width={13}
+                    height={13}
                     viewBox="0 0 13 13"
                     fill="none"
                   >
                     <path
                       d="M1.24877 12.0698L10.7489 1.75903"
                       stroke="white"
-                      stroke-width="1.65"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.65"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M2.83521 0.96582H11.5597V9.6903"
                       stroke="white"
-                      stroke-width="1.65"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.65"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
@@ -105,8 +110,8 @@ export default function Footer({theme}) {
                     <a href="#">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="39"
-                        height="38"
+                        width={39}
+                        height={38}
                         viewBox="0 0 39 38"
                         fill="none"
                       >
@@ -129,8 +134,8 @@ export default function Footer({theme}) {
                     <a href="#">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="38"
-                        height="38"
+                        width={38}
+                        height={38}
                         viewBox="0 0 38 38"
                         fill="none"
                       >
@@ -143,8 +148,8 @@ export default function Footer({theme}) {
                           fill="white"
                         />
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M27.5691 15.2616C27.5044 13.8606 27.1923 12.6196 26.1912 11.5972C25.194 10.5748 23.9836 10.2548 22.6171 10.1845C21.2088 10.1026 16.9876 10.1026 15.5793 10.1845C14.2167 10.2509 13.0063 10.5709 12.0052 11.5933C11.0042 12.6157 10.6958 13.8567 10.6273 15.2577C10.5474 16.7016 10.5474 21.0294 10.6273 22.4733C10.692 23.8742 11.0042 25.1152 12.0052 26.1376C13.0063 27.1601 14.2129 27.4801 15.5793 27.5503C16.9876 27.6323 21.2088 27.6323 22.6171 27.5503C23.9836 27.484 25.194 27.164 26.1912 26.1376C27.1885 25.1152 27.5006 23.8742 27.5691 22.4733C27.649 21.0294 27.649 16.7055 27.5691 15.2616ZM23.6519 15.244C24.2153 15.244 24.672 14.7797 24.672 14.1982C24.672 13.6206 24.2153 13.1523 23.6519 13.1523C23.0886 13.1523 22.6318 13.6206 22.6318 14.1982C22.6318 14.7758 23.0848 15.244 23.6519 15.244ZM19.101 14.3828C16.6802 14.3828 14.7275 16.3848 14.7275 18.8667C14.7275 21.3486 16.6802 23.3506 19.101 23.3506C21.5218 23.3506 23.4744 21.3486 23.4744 18.8667C23.4744 16.3848 21.5218 14.3828 19.101 14.3828ZM16.2568 18.8682C16.2568 17.2604 17.5319 15.9531 19.1001 15.9531C20.6683 15.9531 21.9434 17.2604 21.9434 18.8682C21.9434 20.476 20.6645 21.7834 19.1001 21.7834C17.5357 21.7834 16.2568 20.476 16.2568 18.8682ZM24.1272 25.6843C24.877 25.376 25.4518 24.7867 25.7486 24.0219C26.1306 23.0378 26.1094 20.8852 26.0956 19.4899C26.0933 19.2584 26.0912 19.0478 26.0912 18.8668C26.0912 18.6857 26.0933 18.4751 26.0956 18.2437C26.1094 16.8491 26.1306 14.6991 25.7486 13.7117C25.4479 12.9429 24.8732 12.3536 24.1272 12.0492C23.1643 11.6597 21.0546 11.6805 19.694 11.6939C19.4733 11.696 19.2723 11.698 19.0991 11.698C18.9225 11.698 18.7171 11.6959 18.4914 11.6935C17.1311 11.6794 15.034 11.6576 14.071 12.0492C13.3211 12.3575 12.7464 12.9468 12.4495 13.7117C12.0696 14.6988 12.0898 16.8618 12.1029 18.2568C12.105 18.4831 12.1069 18.6892 12.1069 18.8668C12.1069 19.0478 12.1048 19.2584 12.1026 19.4898C12.0888 20.8844 12.0675 23.0345 12.4495 24.0219C12.7502 24.7907 13.3249 25.3799 14.071 25.6843C15.0338 26.0738 17.1435 26.0531 18.5041 26.0397C18.7249 26.0375 18.9259 26.0355 19.0991 26.0355C19.2756 26.0355 19.4811 26.0377 19.7067 26.04C21.067 26.0541 23.1641 26.0759 24.1272 25.6843Z"
                           fill="white"
                         />
@@ -155,8 +160,8 @@ export default function Footer({theme}) {
                     <a href="#">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="38"
-                        height="38"
+                        width={38}
+                        height={38}
                         viewBox="0 0 38 38"
                         fill="none"
                       >
@@ -179,8 +184,8 @@ export default function Footer({theme}) {
                     <a href="#">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="39"
-                        height="38"
+                        width={39}
+                        height={38}
                         viewBox="0 0 39 38"
                         fill="none"
                       >
@@ -220,9 +225,7 @@ export default function Footer({theme}) {
         </div>
 
         <div className={style.copyright}>
-          <p>
-          © 2025 Wizzou. All rights reserved
-          </p>
+          <p>© 2025 Wizzou. All rights reserved</p>
           <ul>
             <li>
               <a href="#">Terms & Condition</a>

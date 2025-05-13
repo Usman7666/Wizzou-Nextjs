@@ -104,10 +104,10 @@ $font-inter : '--font-inter';
     width:  1006.184px;
     height: 700px;
     flex-shrink: 0;
-    border-radius: 1006.184px;
-    opacity: 0.2;
-    background: var(--Primary-Linear-White, linear-gradient(180deg, #2181F0 0%, #E2EFFD 100%));
-    filter: blur(100px);
+   border-radius: 1006.184px;
+      opacity: 0.2;
+      background: var(--Primary-Linear-White, linear-gradient(180deg, #2181F0 0%, #E2EFFD 100%));
+      filter: blur(350px);
     @media (max-width:$breakpoint-desktop) {
         width: 100%;
     }
